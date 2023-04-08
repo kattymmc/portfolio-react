@@ -1,3 +1,7 @@
+#skills{
+    padding: 0;
+}
+
 .skills__container h2, .skills__container h3 {
     text-align: center;
 }
@@ -30,6 +34,8 @@
 .softskill .icon {
     font-size: 2.5rem;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .softskill-title {
@@ -37,7 +43,6 @@
     justify-content: space-between;
     position: relative;
 }
-
 
 .softskill-title::before {
     position: absolute;
@@ -98,6 +103,22 @@
     font-size: 0.7rem;
     color: #8D8D8E;
 }
+
+.softskills__container.animated {
+    animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
 
 /* Media queries (Medium devices) */
 @media screen and (max-width: 1024px) {

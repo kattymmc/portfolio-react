@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import { GoThreeBars } from 'react-icons/go'
 import { MdOutlineClose } from 'react-icons/md'
 import './Navbar.css'
@@ -9,6 +10,7 @@ import { links } from '../../data';
 const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
   const [isAtTop, setIsAtTop] = useState(true);
+  let location = useLocation();
 
   const changeBackground = () => {
     if(window.scrollY >= 100) {
@@ -18,12 +20,19 @@ const Navbar = () => {
     }
   }
 
+  const scrollUp  = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
   window.addEventListener('scroll', changeBackground)
 
   return (
     <nav>
       <div className={`container nav__container ${isAtTop ? '' : 'nav__container-active'}`}>
-        <Link to="/" className='logo'>
+        <Link to="/" className='logo' onClick={scrollUp}>
           <img src={Logo} alt="Nav logo"/>
         </Link>
         <ul className={`nav__links ${isNavShowing ? 'show__nav' : 'hide__nav' }`}>
@@ -31,7 +40,7 @@ const Navbar = () => {
             links.map(({name, path}, index) => {
               return (
                 <li key={index}>
-                  <NavLink to={path} className={({isActive}) => isActive ? 'active-nav' : ''}>{name}</NavLink>
+                  <HashLink smooth to={path} className={`${location.hash}` === path ? "active-nav" : ""}>{name}</HashLink>
                 </li>
               )
             })

@@ -27,21 +27,33 @@
     transform: scale(1.1) translateZ(0);
 }
 
-
-.backgroud-image {
-    background-image: url(../../assets/project1.png);
-    filter: brightness(0.6) contrast(0.9);
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    transition: all .3s ease;
+.projects:hover {
+    cursor: pointer;
 }
+
+.projects .content .details span{
+    color: var(--color-bg-variant);
+    font-family: 'Cooper Hewitt Medium';
+    font-size: 1.2rem;
+}
+
+.projects .content .details p{
+    color: #fff;
+    font-family: 'Cooper Hewitt Semibold';
+    font-size: 2.5rem;
+}
+
+.projects .content .details button{
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.projects .content .details button:hover{
+    background: transparent;
+    cursor: pointer;
+}
+
 
 .content {
     width: 100%;
@@ -50,6 +62,13 @@
     z-index: 2;
     padding: 150px 95px;
     background: transparent;
+}
+
+.modal-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -63,5 +82,18 @@
 @media screen and (max-width: 600px) {
     .projects__container {
         max-width: 550px;
+    }
+
+    .projects .content .details {
+        text-align: center;
+    }
+
+    .projects .content {
+        padding: 6rem 2rem;
+    }
+
+    .modal-container {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 }

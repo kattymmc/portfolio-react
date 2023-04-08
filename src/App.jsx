@@ -7,7 +7,7 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (

@@ -7,23 +7,27 @@ import {GrLinkDown} from 'react-icons/gr'
 
 function Header() {
   return (
-    <header>
+    <header id="header">
       <div className="container header__container">
         <HeaderSocials />
         <div className='container-me'>
           <div>
             <h2>Hola! Soy</h2>
             <h1>Katherine Miraval</h1>
-            <h3 className='text-light'>FULL-STACK DEVELOPER</h3>
-            <p>Me considero una persona autodidacta y apasionada por la programación con
-  capacidad rápida de aprendizaje. Mi objetivo es trabajar en una empresa que me permita enfrentar desafíos complejos,
-  contribuir con mis habilidades y crecer profesionalmente para generar un impacto positivo en su cultura y ambiente laboral.</p>
+            <div className='text-light-container'>
+              <p className='text-light'>FULL-STACK DEVELOPER</p>
+            </div>
+            <p>Egresada de Ingeniería de sistemas y enfocada al desarrollo Full-stack. 
+              Mi objetivo profesional es crear soluciones innovadoras y eficientes para contribuir
+              al éxito del negocio. Estoy dispuesta a colaborar en proyectos complejos y desafiantes 
+              que me permitan crecer profesionalmente y crear un impacto positivo en la sociedad.</p>
             <CTA />
             <div className="scroll__down">
-              <a href="#contact">Scroll</a> <GrLinkDown /> 
+              <a href="#contact">
+                Scroll Down <GrLinkDown />
+              </a> 
             </div>
           </div>
-          
           
           <div className='me'>
             <img src={ME} alt="me"/>

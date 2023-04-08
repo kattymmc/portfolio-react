@@ -12,7 +12,7 @@ function TechSkills() {
                 <h3>Front-End</h3>
                 <ul>
                     <li>
-                        <div class="icon">
+                        <div className="icon">
                             <FaHtml5 />
                         </div>
                         <div>
@@ -21,7 +21,7 @@ function TechSkills() {
                         </div>
                     </li>
                     <li>
-                        <div class="icon">
+                        <div className="icon">
                             <FaCss3Alt />
                         </div>
                         <div>
@@ -30,7 +30,7 @@ function TechSkills() {
                         </div>
                     </li>
                     <li>
-                        <div class="icon">
+                        <div className="icon">
                             <IoLogoJavascript />
                         </div>
                         <div>
@@ -39,7 +39,7 @@ function TechSkills() {
                         </div>
                     </li>
                     <li>
-                        <div class="icon">
+                        <div className="icon">
                             <FaReact />
                         </div>
                         <div>
@@ -48,7 +48,7 @@ function TechSkills() {
                         </div>
                     </li>
                     <li>
-                        <div class="icon">
+                        <div className="icon">
                             <FaAngular />
                         </div>
                         <div>
@@ -57,7 +57,7 @@ function TechSkills() {
                         </div>
                     </li>
                     <li>
-                        <div class="icon">
+                        <div className="icon">
                             <FaBootstrap />
                         </div>
                         <div>

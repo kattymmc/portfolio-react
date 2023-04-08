@@ -1,2 +1,4 @@
 react-icons
 reect-router-dom
+styled-components
+emailjs-com

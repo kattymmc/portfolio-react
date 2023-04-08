@@ -5,10 +5,13 @@ import TechSkills from './TechSkills'
 
 function Skills() {
   return (
-    <div className='skills__container'>
-      <SoftSkills/>
-      <TechSkills />
-    </div>
+    <section id="skills">
+      <div className='skills__container'>
+        <SoftSkills/>
+        <TechSkills />
+      </div>
+    </section>
+    
   )
 }
 

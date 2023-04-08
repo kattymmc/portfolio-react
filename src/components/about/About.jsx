@@ -7,7 +7,6 @@ import CV from '../../assets/cv.pdf'
 const About = () => {
   return (
     <section id='about'>
-
       <div className='container about__container'>
         <div className='about__me'>
           <div className='about__me-image'>
@@ -17,9 +16,13 @@ const About = () => {
 
         <div className='about__content'>
           <h3>Sobre mí</h3>
-          <h2>About me</h2>
+          <h2>Katherine Miraval</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium corporis, vero reprehenderit est laboriosam libero iste quasi autem obcaecati maiores corrupti nihil, culpa eum consequuntur. Debitis laborum molestias deleniti nesciunt?
+            Estudié Ingeniería de Sistemas en la Universidad Nacional Mayor de San Marcos. Tengo 2 años de experiencia
+            en el desarrollo de Sistemas web enfocados al rubro de ERP y Facturación Electrónica utilizando tecnologías como React y Javascript.
+            También estuve 1 año trabajando en el área de desarrollo de mi universidad desarrollando sistemas web para las áreas administrativas 
+            utilizando Spring Boot. Soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, 
+            responsable y proactiva, me gusta aprender de los demás y superarme continuamente.
           </p>
           <a className="btn btn-primary" href={CV} download>Download CV</a>
         </div>

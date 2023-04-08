@@ -78,6 +78,15 @@ h1 {
   color: var(--color-black);
 }
 
+h2 {
+  font-family: 'Cooper Hewitt Medium';
+  line-height: 3.5rem;
+}
+
+h3 {
+  line-height: 3rem;
+}
+
 section {
   padding: 5rem 5rem;
 }

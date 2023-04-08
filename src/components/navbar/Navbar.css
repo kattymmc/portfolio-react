@@ -1,12 +1,11 @@
 nav {
     height: 5rem;
-    width: 100vw;
-    display: grid;
+    width: 100%;
     place-items: center;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 50;
 }
 
 .nav__container {
@@ -16,7 +15,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 0 10rem;
     background-color: var(--color-bg);
     padding: 0 5rem;
     transition: var(--transition);
@@ -124,4 +122,18 @@ nav {
         display: none;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        height: 4rem;
+    }
+
+    .nav__container {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 5rem;
+    }
 }
