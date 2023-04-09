@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Link, NavLink, useLocation } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import { GoThreeBars } from 'react-icons/go'
 import { MdOutlineClose } from 'react-icons/md'
