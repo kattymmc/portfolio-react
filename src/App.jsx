@@ -7,17 +7,34 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import { BrowserRouter } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { PropagateLoader } from 'react-spinners';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+      setLoading(false);
+  },[])
+
   return (
     <BrowserRouter>
-      <Navbar />
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+    {
+      loading ? 
+        <div className='App'>
+          <PropagateLoader color="#933469" size={30}  loading={loading}/>
+        </div>
+      :
+        <>
+        <Navbar />
+        <Header />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+        </>
+    }
     </BrowserRouter>
   );
 }
