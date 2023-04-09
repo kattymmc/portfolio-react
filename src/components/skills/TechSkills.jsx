@@ -1,7 +1,7 @@
 import React, {useState, useRef, useEffect} from 'react'
 import {FaHtml5, FaCss3Alt, FaReact, FaAngular, FaBootstrap, FaNodeJs, FaJava, FaPython, FaGitAlt} from 'react-icons/fa'
 import {IoLogoJavascript} from 'react-icons/io'
-import {SiTypescript, SiSpringboot, SiCplusplus, SiMysql, SiMongodb, SiOracle, SiPostman, SiVisualstudiocode} from 'react-icons/si'
+import {SiTypescript, SiSpringboot, SiCplusplus, SiMysql, SiMongodb, SiOracle, SiPostman, SiPostgresql} from 'react-icons/si'
 
 const TechSkills = () => {
     const [isAnimated, setIsAnimated] = useState(false);
@@ -43,7 +43,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>HTML</span>
-                            <span className='level'>Advanced</span>
+                            <span className='level'>Avanzado</span>
                         </div>
                     </li>
                     <li>
@@ -52,7 +52,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>CSS</span>
-                            <span className='level'>Intermediate</span>
+                            <span className='level'>Intermedio</span>
                         </div>
                     </li>
                     <li>
@@ -61,7 +61,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>Typescript</span>
-                            <span className='level'>Basic</span>
+                            <span className='level'>Intermedio</span>
                         </div>
                     </li>
                     <li>
@@ -70,7 +70,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>React</span>
-                            <span className='level'>Advanced</span>
+                            <span className='level'>Intermedio</span>
                         </div>
                     </li>
                     <li>
@@ -79,7 +79,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>Angular</span>
-                            <span className='level'>Intermediate</span>
+                            <span className='level'>Intermedio</span>
                         </div>
                     </li>
                     <li>
@@ -88,7 +88,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>Bootstrap</span>
-                            <span className='level'>Intermediate</span>
+                            <span className='level'>Intermedio</span>
                         </div>
                     </li>
                 </ul>
@@ -102,7 +102,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>NodeJS</span>
-                            <span className='level'>Advanced</span>
+                            <span className='level'>Avanzado</span>
                         </div>
                     </li>
                     <li> 
@@ -111,7 +111,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>Javascript</span>
-                            <span className='level'>Advanced</span>
+                            <span className='level'>Avanzado</span>
                         </div>
                     </li>
                     <li> 
@@ -120,7 +120,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>Java</span>
-                            <span className='level'>Intermediate</span>
+                            <span className='level'>Avanzado</span>
                         </div>
                     </li>
                     <li> 
@@ -129,7 +129,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>SpringBoot</span>
-                            <span className='level'>Intermediate</span>
+                            <span className='level'>Avanzado</span>
                         </div>
                     </li>
                     <li> 
@@ -138,7 +138,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>Python</span>
-                            <span className='level'>Intermediate</span>
+                            <span className='level'>Intermedio</span>
                         </div>
                     </li>
                     <li> 
@@ -147,7 +147,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>C++</span>
-                            <span className='level'>Basic</span>
+                            <span className='level'>Básico</span>
                         </div>
                     </li>
                 </ul>
@@ -161,7 +161,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>MySql</span>
-                            <span className='level'>Intermediate</span>
+                            <span className='level'>Avanzado</span>
                         </div>
                     </li>
                     <li>
@@ -170,7 +170,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>MongoDB</span>
-                            <span className='level'>Advanced</span>
+                            <span className='level'>Avanzado</span>
                         </div>
                     </li>
                     <li>
@@ -179,7 +179,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>Oracle</span>
-                            <span className='level'>Basic</span>
+                            <span className='level'>Intermedio</span>
                         </div>
                     </li>
                     <li>
@@ -188,7 +188,7 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>Git</span>
-                            <span className='level'>Advanced</span>
+                            <span className='level'>Avanzado</span>
                         </div>
                     </li>
                     <li>
@@ -197,16 +197,16 @@ const TechSkills = () => {
                         </div>
                         <div>
                             <span className='skill'>Postman</span>
-                            <span className='level'>Intermediate</span>
+                            <span className='level'>Intermedio</span>
                         </div>
                     </li>
                     <li>
                         <div className="icon">
-                            <SiVisualstudiocode />
+                            <SiPostgresql />
                         </div>
                         <div>
-                            <span className='skill'>Visual SC</span>
-                            <span className='level'>Advanced</span>
+                            <span className='skill'>PostgreSQL</span>
+                            <span className='level'>Básico</span>
                         </div>
                     </li>
                 </ul>
