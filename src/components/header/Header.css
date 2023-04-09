@@ -125,7 +125,7 @@ header {
   /* Media queries (Small devices) */
   @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: auto;
         padding-top: 3rem;
         text-align: center;
     }

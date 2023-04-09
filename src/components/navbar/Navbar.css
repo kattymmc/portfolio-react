@@ -83,6 +83,7 @@ nav {
     }
 
     .nav__toggle-btn svg {
+        color: var(--color-dark);
     }
 
     .nav__links {

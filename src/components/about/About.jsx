@@ -48,7 +48,7 @@ const About = () => {
             utilizando Spring Boot. Soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, 
             responsable y proactiva, me gusta aprender de los demás y superarme continuamente.
           </p>
-          <a className="btn btn-primary" href={CV} download>Download CV</a>
+          <a className="btn btn-primary" href={CV} download>Descargar CV</a>
         </div>
       </div>
     </section>
