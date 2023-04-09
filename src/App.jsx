@@ -11,10 +11,13 @@ import { useEffect, useState } from 'react';
 import { PropagateLoader } from 'react-spinners';
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
       setLoading(false);
+    }, 4000)
   },[])
 
   return (

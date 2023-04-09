@@ -50,18 +50,6 @@ nav {
     text-decoration: underline;
 }
 
-.active-nav::after {
-    /*content: '';
-    display: block;
-    width: 1.2rem;
-    height: 1.2rem;
-    background: red;
-    position: absolute;
-    left: calc(50%-0.6rem);
-    transform: rotate(45deg);
-    margin-top: 0.9rem;*/
-}
-
 /*Only shows on medium and small screens*/
 .nav__toggle-btn {
     display: none;
