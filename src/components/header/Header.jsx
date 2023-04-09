@@ -1,9 +1,9 @@
 import React from 'react'
 import './Header.css'
 import CTA from './CTA'
-import ME from '../../assets/profile-pic-head.png'
+import ME from '../../assets/me-transparent.png'
 import HeaderSocials from './HeaderSocials'
-import {GrLinkDown} from 'react-icons/gr'
+// import {GrLinkDown} from 'react-icons/gr'
 
 function Header() {
   return (
@@ -22,11 +22,11 @@ function Header() {
               al éxito del negocio. Estoy dispuesta a colaborar en proyectos complejos y desafiantes 
               que me permitan crecer profesionalmente y crear un impacto positivo en la sociedad.</p>
             <CTA />
-            <div className="scroll__down">
+            {/*<div className="scroll__down">
               <a href="#contact">
-                Scroll Down <GrLinkDown />
-              </a> 
-            </div>
+                Ir abajo <GrLinkDown />
+              </a>
+            </div>*/}
           </div>
           
           <div className='me'>

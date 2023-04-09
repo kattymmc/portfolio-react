@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import './Contact.css'
 import { RiMailSendLine } from 'react-icons/ri'
 import { BsWhatsapp } from 'react-icons/bs'
@@ -8,6 +8,31 @@ import emailjs from 'emailjs-com';
 const Contact = () => {
 
   const form = useRef();
+
+  const [isAnimated, setIsAnimated] = useState(false);
+  const ref = useRef();
+  
+  useEffect(() => {
+    const node = ref.current;
+    const observer = new IntersectionObserver((entry) => {
+        if(entry[0].isIntersecting) {
+            setIsAnimated(true)
+        } else {
+            setIsAnimated(false)
+        }
+    });
+
+    if(node) {
+        observer.observe(node);
+    }
+
+    return () => {
+        if(node) {
+            observer.unobserve(node)
+        }
+    }
+
+  }, [ref])
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,19 +48,19 @@ const Contact = () => {
     <section id="contact">
       <h3>Contáctame</h3>
       <h2>Dejame un mensaje</h2>
-      <div className='contact__container'>
+      <div ref={ref} className={isAnimated ? 'contact__container animated-y' : 'contact__container'}>
         <div className='contact-info'>
           <div className='contact-card'>
             <span className='icon'><RiMailSendLine /></span>
-            <h3>Correo</h3>
-            <span>kattymmc@hotmail.com</span><br />
-            <span>Escríbeme</span>
+            <p className="contact-name">Correo</p>
+            <p className="contact-mail">kattymmc@hotmail.com</p>
+            <a href="mailto:kattymmc@hotmail.com" target='_blank' rel="noreferrer">Escríbeme</a>
           </div>
           <div className='contact-card'>
             <span className='icon'><BsWhatsapp /></span>
-            <h3>Whatsapp</h3>
-            <span>+51 940758558</span><br />
-            <span>Escríbeme</span>
+            <p className="contact-name">Whatsapp</p>
+            <p className="contact-mail">+51 940758558</p>
+            <a href="https://wa.link/ame3sm" target='_blank' rel="noreferrer">Escríbeme</a>
           </div>
         </div>
         <div className='contact-message'>

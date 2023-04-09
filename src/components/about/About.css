@@ -7,6 +7,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10%;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-30%);
+    transition: all 1s;
 }
 
 .about__me {
@@ -73,6 +77,13 @@
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-dark);
+}
+
+.animated-x {    
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 /* Media queries (Medium devices) */

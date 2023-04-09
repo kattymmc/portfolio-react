@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './Projects.css'
 import Modal from './Modal'
 import { projects } from '../../data'
@@ -8,6 +8,8 @@ import {HiArrowRight} from 'react-icons/hi'
 const Projects = () => {
   const [stateModal, setStateModal] = useState(false);
   const [modalContent, setModalContent] = useState({});
+  const [isAnimated, setIsAnimated] = useState(false);
+  const ref = useRef();
 
   const changeStateModal = () => {
     setStateModal(!stateModal);
@@ -17,27 +19,47 @@ const Projects = () => {
     setModalContent(project);
     changeStateModal();
   }
+  
+  useEffect(() => {
+      const node = ref.current;
+      const observer = new IntersectionObserver((entry) => {
+          if(entry[0].isIntersecting) {
+              setIsAnimated(true)
+          } else {
+              setIsAnimated(false)
+          }
+      });
+
+      if(node) {
+          observer.observe(node);
+      }
+
+      return () => {
+          if(node) {
+              observer.unobserve(node)
+          }
+      }
+
+  }, [ref])
 
   return (
     <section id="projects">
       <h3>Proyectos</h3>
       <h2>Sistemas que he realizado</h2>
-      <div className='projects__container'>
+      <div ref={ref} className={isAnimated? 'projects__container animated':'projects__container'}>
       {
         projects.map((project, index) => {
           return (
-            <>
-              <div className='projects' onClick={() => changeContent(project)}>
+              <div className='projects' onClick={() => changeContent(project)} key={index}>
                 <BgImage className='backgroud-image' urlProp={require(`../../assets/${project.image}`)}></BgImage>
                 <div className='content'>
                     <div className='details'>
                       <span>{project.type}</span>
                       <p>{project.title}</p>
-                      <button>View Project <span><HiArrowRight /></span></button>
+                      <button>Ver Proyecto <span><HiArrowRight /></span></button>
                     </div>
                 </div>
               </div>
-            </>
           )
         })
       }
@@ -49,14 +71,14 @@ const Projects = () => {
               <p>{modalContent.description}</p>
             </div>
             <div>
-              <p>Repositorio: </p>
-              <p>Fecha: </p>
-              <p>Tecnologías: </p>
+              <p><span>Repositorio: </span><a href={modalContent.repository} target='_blank' rel="noreferrer">{modalContent.repository === "" ? "No disponible" : "Github"}</a></p>
+              <p><span>Fecha: </span>{modalContent.date}</p>
+              <p><span>Tecnologías: </span>{modalContent.techstack}</p>
             </div>  
           </div>    
           <div>
               { modalContent.image &&
-                <img src={require(`../../assets/${modalContent.image}`)} />
+                <img src={require(`../../assets/${modalContent.image}`)} alt={modalContent.title} />
               }
           </div>      
       </Modal>          
@@ -67,7 +89,7 @@ const Projects = () => {
 
 const BgImage = styled.div `
   background-image: url(${props => props.urlProp});
-  filter: brightness(0.6) contrast(0.9);
+  filter: brightness(0.5) contrast(0.8);
   position: absolute;
   top: 0px;
   bottom: 0px;

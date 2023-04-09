@@ -1,35 +1,39 @@
-import React, { useState, useEffect  } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import {RiTeamFill} from 'react-icons/ri'
 import {GiBrain} from 'react-icons/gi'
 import {FaBookReader} from 'react-icons/fa'
-import ScrollUp from 'react-scroll-up';
 
 const SoftSkills = () => {
     const [isAnimated, setIsAnimated] = useState(false);
+    const ref = useRef();
+    
+    useEffect(() => {
+    const node = ref.current;
+    const observer = new IntersectionObserver((entry) => {
+        if(entry[0].isIntersecting) {
+            setIsAnimated(true)
+        } else {
+            setIsAnimated(false)
+        }
+    });
 
-      useEffect(() => {
-        const handleScroll = () => {
-          const myDiv = document.querySelector('.softskills__container');
-          const myDivPosition = myDiv.getBoundingClientRect().top;
-    
-          if (myDivPosition < window.innerHeight) {
-            setIsAnimated(true);
-          }
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
-    
+    if(node) {
+        observer.observe(node);
+    }
 
+    return () => {
+        if(node) {
+            observer.unobserve(node)
+        }
+    }
+
+    }, [ref])
+      
   return (
     <section id="softskills">
         <h3>Habilidades</h3>
         <h2>Habilidades blandas</h2>
-        <div className={isAnimated ? 'softskills__container animated fadeInUp' : 'softskills__container'}>
+        <div ref={ref} className={isAnimated ? 'softskills__container animated' : 'softskills__container'}>
             <div className='softskill'>
                 <div className='softskill-title'>
                     <div>

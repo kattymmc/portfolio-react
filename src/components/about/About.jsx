@@ -1,16 +1,40 @@
-import React from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import './About.css'
 import ME from '../../assets/profile-pic.png'
-import { FaAward } from 'react-icons/fa'
 import CV from '../../assets/cv.pdf'
 
 const About = () => {
+  const [isAnimated, setIsAnimated] = useState(false);
+  const ref = useRef();
+  
+  useEffect(() => {
+      const node = ref.current;
+      const observer = new IntersectionObserver((entry) => {
+          if(entry[0].isIntersecting) {
+              setIsAnimated(true)
+          } else {
+              setIsAnimated(false)
+          }
+      });
+
+      if(node) {
+          observer.observe(node);
+      }
+
+      return () => {
+          if(node) {
+              observer.unobserve(node)
+          }
+      }
+
+  }, [ref])
+
   return (
     <section id='about'>
-      <div className='container about__container'>
+      <div ref={ref} className={isAnimated ? 'container about__container animated-x' : 'container about__container'} >
         <div className='about__me'>
           <div className='about__me-image'>
-            <img src={ME} alt="About image" />
+            <img src={ME} alt="About" />
           </div>
         </div>
 

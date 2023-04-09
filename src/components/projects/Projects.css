@@ -12,6 +12,8 @@
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
 .projects {
@@ -54,7 +56,6 @@
     cursor: pointer;
 }
 
-
 .content {
     width: 100%;
     height: auto;
@@ -69,6 +70,14 @@
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
+}
+
+.modal-container span {
+    font-family: 'Cooper Hewitt Semibold';
+}
+
+.animated {
+    opacity: 1
 }
 
 @media screen and (max-width: 1024px) {
