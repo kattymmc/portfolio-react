@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useRef} from 'react'
 import './About.css'
 import ME from '../../assets/profile-pic.png'
-import CV from '../../assets/cv.pdf'
+import CV from '../../assets/CV.pdf'
 
 const About = () => {
   const [isAnimated, setIsAnimated] = useState(false);
