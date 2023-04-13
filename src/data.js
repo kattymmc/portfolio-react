@@ -39,18 +39,27 @@ export const projects = [
         description: "Este proyecto fue realizado para almacenar los documentos del área de Trámite Documentario de la Facultad de Ingeniería de Sistemas. Fue realizado con el fin de mejorar el los tiempos de trámite. El sistema incluye registro, edición, clasificación, búsqueda y eliminación de los documentos. Los documentos pueden ser almacenados según el tipo solo se mostrará ciertos documentos a los usuarios permitidos.",
         repository: "https://github.com/kattymmc/sistema-escaneo-backend",
         date: "15 de Setiembre del 2020",
-        techstack: "Spring Boot, Spring Securiry, JPS, Angular, Typescript, MySQL",
+        techstack: "Spring Boot, Spring Security, JPA, Angular, Typescript, MySQL",
         imagebody: ""
     },
     {
         type: "Sistema web",
-        title: "Sistema de seguimiento Smartready",
+        title: "Sistema de Búsqueda Docente",
+        image: "sysbusqdoc.png",
+        description: "Sistema web que permite la búsqueda del horario de clases de los docentes. Está conectado con una base de datos MySQL y se puede filtrar según el código del profesor,  el curso o el día en el que se realizará la clase. Este sistema ayudó a optimizar el proceso de asistencia.",
+        repository: "https://github.com/kattymmc/sistema-busqueda-docente",
+        date:"15 de Setiembre 2020",
+        techstack: "Spring Boot, Spring Security, JPA, ThymeLeaf, MySQL",
+        imagebody: ""
+    },
+    {
+        type: "Sistema web",
+        title: "Smartready",
         image: "smartready.jpg",
-        description: "Aplicación de seguimiento de tareas hecha con ReactJS. El sistema permite obtener los datos extraídos de la Base de datos de Netsuite y mostrar todas las tareas asignadas de los usuarios de la Empresa. Incluye funcionalidades de selección de prioridades, muestra de líneas de tiempo, asignación y actualización de tareas.",
+        description: "Aplicación de seguimiento de tareas hecha con React. El sistema permite obtener los datos extraídos de la Base de datos de Netsuite y mostrar todas las tareas asignadas a los usuarios de la Empresa. Incluye funcionalidades de selección de prioridades, muestra de líneas de tiempo, asignación y actualización de tareas.",
         repository: "",
         date:"11 de Noviembre 2022",
         techstack: "React, Javascript, MaterialUI, Netsuite",
         imagebody: ""
-    },
-
+    }
 ]
