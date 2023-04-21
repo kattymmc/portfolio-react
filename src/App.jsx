@@ -9,9 +9,7 @@ import Navbar from './components/navbar/Navbar';
 import { BrowserRouter } from 'react-router-dom';
 import { useEffect, useState, useContext } from 'react';
 import { PropagateLoader } from 'react-spinners';
-import { IntlProvider } from 'react-intl';
 import { langContext } from './context/langContext';
-import EnglishMessages from './lang/en-US.json';
 
 
 function App() {
