@@ -1,0 +1,70 @@
+{
+    "menu.home" : "Inicio",
+    "menu.about": "Sobre mí",
+    "menu.skills": "Habilidades",
+    "menu.projects": "Proyectos",
+    "menu.contact": "Contacto",
+
+    "header.subtitle": "Hola! Soy",
+    "header.description": "Egresada de Ingeniería de sistemas y enfocada al desarrollo Full-stack. Mi objetivo profesional es crear soluciones innovadoras y eficientes para contribuir al éxito del negocio. Estoy dispuesta a colaborar en proyectos complejos y desafiantes que me permitan crecer profesionalmente y crear un impacto positivo en la sociedad.",
+    "header.button1": "Sobre mi",
+    "header.button2": "Contacto",
+
+    "about.subtitle": "Sobre mí",
+    "about.description": "Estudié Ingeniería de Sistemas en la Universidad Nacional Mayor de San Marcos. Tengo 2 años de experiencia en el desarrollo de Sistemas web enfocados al rubro de ERP y Facturación Electrónica utilizando tecnologías como React y Javascript. También estuve 1 año trabajando en el área de desarrollo de mi universidad desarrollando sistemas web para las áreas administrativas utilizando Spring Boot. Soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, responsable y proactiva, me gusta aprender de los demás y superarme continuamente.",
+    "about.button": "Descargar CV",
+
+    "skills.subtitle": "Habilidades",
+
+    "softskills.title": "Habilidades Blandas",
+    "softskills.skill1": "Trabajo en Equipo",
+    "softskills.description1": "La colaboración es escencial para fomentar un ambiente de aprendizaje y crecimiento constante para crear soluciones de software de calidad. También permite aprovechar las fortalezas y habilidades de cada miembro del equipo para desarrollar soluciones innovadoras.",
+    "softskills.skill2": "Rápido aprendizaje",
+    "softskills.description2": "Soy capaz de comprender y asimilar nuevos conceptos y tecnologías con facilidad, lo que me permite adaptarme rápidamente a los requisitos y desafíos del proyecto. Soy una apasionada por mantenerme actualizada en las últimas tecnologías del mercado en un entorno altamente cambiante.",
+    "softskills.skill3": "Pensamiento Analítico",
+    "softskills.description3": "Mi habilidad para analizar y descomponer problemas complejos en tareas más manejables me permite desarrollar soluciones efectivas y eficientes para los clientes.",
+    
+    "techskills.title": "Habilidades técnicas",
+    "techskills.others": "Otros",
+    "techskills.advanced": "Avanzado",
+    "techskills.intermediate": "Intermedio",
+    "techskills.basic": "Básico",
+
+    "projects.subtitle": "Proyectos",
+    "projects.title": "Sistemas que he realizado",
+    "projects.repository": "Repositorio",
+    "projects.date": "Fecha",
+    "projects.tech": "Tecnologías",
+    "projects.view": "Ver Proyecto",
+
+    "projects.psubtitle1": "Sistema Web",
+    "projects.ptitle1": "Sistema de Reclamos",
+    "projects.pdescription1": "Sistema web para registrar las reclamos y quejas de los usuarios, fue realizado para un curso de base de datos de la universidad. El sistema permite el inicio de sesión según el rol los usuarios, permite el registro de usuario y la creación de quejas. Permite a los administradores ver el seguimiento de todas las quejas registradas de los usuarios y actualizar el estado de estos. Los datos fueron almacenados en una base de datos de tipo relacional.",
+    "projects.pdate1": "30 de Setiembre del 2020",
+
+    "projects.psubtitle2": "Sistema Web Responsivo",
+    "projects.ptitle2": "Sistema de gestión documentaria",
+    "projects.pdescription2": "Este proyecto fue realizado para almacenar los documentos del área de Trámite Documentario de la Facultad de Ingeniería de Sistemas. Fue realizado con el fin de mejorar el los tiempos de trámite. El sistema incluye registro, edición, clasificación, búsqueda y eliminación de los documentos. Los documentos pueden ser almacenados según el tipo solo se mostrará ciertos documentos a los usuarios permitidos.",
+    "projects.pdate2": "15 de Setiembre del 2020",
+
+    "projects.psubtitle3": "Sistema Web",
+    "projects.ptitle3": "Sistema de Búsqueda Docente",
+    "projects.pdescription3": "Sistema web que permite la búsqueda del horario de clases de los docentes. Está conectado con una base de datos MySQL y se puede filtrar según el código del profesor, el curso o el día en el que se realizará la clase. Este sistema ayudó a optimizar el proceso de asistencia.",
+    "projects.pdate3": "15 de Setiembre del 2020",
+
+    "projects.psubtitle4": "Sistema Web",
+    "projects.ptitle4": "Smartready",
+    "projects.pdescription4": "Aplicación de seguimiento de tareas hecha con React. El sistema permite obtener los datos extraídos de la Base de datos de Netsuite y mostrar todas las tareas asignadas a los usuarios de la Empresa. Incluye funcionalidades de selección de prioridades, muestra de líneas de tiempo, asignación y actualización de tareas.",
+    "projects.pdate4": "11 de Noviembre del 2022",
+
+    "contact.subtitle": "Contáctame",
+    "contact.title": "Déjame un mensaje",
+    "contact.writeme": "Escríbeme",
+    "contact.email": "Correo",
+    "contact.emailinput": "Escribe tu correo",
+    "contact.message": "Mensaje",
+    "contact.messageinput": "Escribe tu mensaje",
+    "contact.submit": "Enviar mensaje",
+
+    "footer.description": "Copyright © | Hecho en React por Katherine Miraval"
+}

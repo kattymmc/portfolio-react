@@ -20,6 +20,23 @@ nav {
     transition: var(--transition);
 }
 
+.nav__container .nav_links__container{
+    display: flex;
+}
+
+.nav__container .nav_links__container .flag__container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav__container .nav_links__container .flag__container:hover{
+    cursor: pointer;
+}
+
+.nav__container .nav_links__container .flag__container .lang-flag {
+    width: 2.5rem;
+}
+
 .nav__container-active {
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0,0,0,.1);
@@ -33,6 +50,7 @@ nav {
     display: flex;
     gap: 3.5rem;
     align-items: center;
+    margin-right: 1.5rem;
 }
 
 .nav__links a {
@@ -61,6 +79,14 @@ nav {
 
     .nav__container {
         width: 100%;
+    }
+
+    .nav__container .nav_links__container .flag__container{
+        margin-right: 1rem;
+    }
+    
+    .nav__container .nav_links__container .flag__container .lang-flag {
+        width: 2rem;
     }
 
     .nav__toggle-btn {
@@ -92,7 +118,6 @@ nav {
     .nav__links li {
         height: 4rem;
         width: 100%;
-        box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.1);
     }
 
     .nav__links li a {
@@ -120,6 +145,10 @@ nav {
 
     .nav__container {
         padding: 0 1rem;
+    }
+
+    .nav__links li {
+        height: 3rem;
     }
 
     .logo {

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import {RiTeamFill} from 'react-icons/ri'
 import {GiBrain} from 'react-icons/gi'
 import {FaBookReader} from 'react-icons/fa'
+import { FormattedMessage } from 'react-intl';
 
 const SoftSkills = () => {
     const [isAnimated, setIsAnimated] = useState(false);
@@ -31,14 +32,14 @@ const SoftSkills = () => {
       
   return (
     <section id="softskills">
-        <h3>Habilidades</h3>
-        <h2>Habilidades blandas</h2>
+        <h3><FormattedMessage id='skills.subtitle' /></h3>
+        <h2><FormattedMessage id='softskills.title' /></h2>
         <div ref={ref} className={isAnimated ? 'softskills__container animated' : 'softskills__container'}>
             <div className='softskill'>
                 <div className='softskill-title'>
                     <div>
                         <span>01</span>
-                        <h3>Trabajo en Equipo</h3>
+                        <h3><FormattedMessage id='softskills.skill1' /></h3>
                     </div>
                     <div className='icon'>
                         <RiTeamFill />
@@ -46,10 +47,7 @@ const SoftSkills = () => {
                 </div>
                 <div className='softskill-text'>
                     <p>
-                        La colaboración es escencial para fomentar un ambiente de aprendizaje 
-                        y crecimiento constante para crear soluciones de software de calidad.
-                        También permite aprovechar las fortalezas y habilidades de cada miembro del equipo para desarrollar
-                        soluciones innovadoras. 
+                        <FormattedMessage id='softskills.description1' />
                     </p>
                 </div>
             </div>
@@ -57,16 +55,15 @@ const SoftSkills = () => {
                 <div className='softskill-title'>
                     <div>
                         <span>02</span>
-                        <h3>Rápido Aprendizaje</h3>
+                        <h3><FormattedMessage id='softskills.skill2' /></h3>
                     </div>
                     <div className='icon'>
                     <FaBookReader />
                     </div>
                 </div>
                 <div className='softskill-text'>
-                    <p> Soy capaz de comprender y asimilar nuevos conceptos y tecnologías con facilidad, 
-                        lo que me permite adaptarme rápidamente a los requisitos y desafíos del proyecto.
-                        Soy una apasionada por mantenerme actualizada en las últimas tecnologías del mercado en un entorno altamente cambiante.
+                    <p> 
+                        <FormattedMessage id='softskills.description2' />
                     </p>
                 </div>
             </div>
@@ -74,7 +71,7 @@ const SoftSkills = () => {
                 <div className='softskill-title'>
                     <div>
                         <span>03</span>
-                        <h3>Pensamiento analítico</h3>
+                        <h3><FormattedMessage id='softskills.skill3' /></h3>
                     </div>
                     <div className='icon'>
                     <GiBrain />
@@ -82,8 +79,7 @@ const SoftSkills = () => {
                 </div>
                 <div className='softskill-text'>
                     <p>
-                        Mi habilidad para analizar y descomponer problemas complejos en tareas más manejables me 
-                        permite desarrollar soluciones efectivas y eficientes para los clientes.
+                        <FormattedMessage id='softskills.description3' />
                     </p>
                 </div>
             </div>

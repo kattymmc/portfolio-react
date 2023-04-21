@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import {FaLinkedinIn, FaGithub, FaInstagram} from 'react-icons/fa'
+import { FormattedMessage } from 'react-intl';
 
 function Footer() {
   return (
@@ -11,7 +12,7 @@ function Footer() {
         <a href="https://www.instagram.com/kattymmc/" target='_blank' rel="noreferrer"><FaInstagram /></a>
       </div>
       <div className='footer-text'>
-        Copyright © | Hecho en React por Katherine Miraval
+        <FormattedMessage id='footer.description' />
       </div>
     </div>
   )

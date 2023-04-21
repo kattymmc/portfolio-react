@@ -4,6 +4,7 @@ import Modal from './Modal'
 import { projects } from '../../data'
 import styled from 'styled-components'
 import {HiArrowRight} from 'react-icons/hi'
+import { FormattedMessage } from 'react-intl'
 
 const Projects = () => {
   const [stateModal, setStateModal] = useState(false);
@@ -44,8 +45,8 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <h3>Proyectos</h3>
-      <h2>Sistemas que he realizado</h2>
+      <h3><FormattedMessage id='projects.subtitle' /></h3>
+      <h2><FormattedMessage id='projects.title' /></h2>
       <div ref={ref} className={isAnimated? 'projects__container animated':'projects__container'}>
       {
         projects.map((project, index) => {
@@ -56,7 +57,7 @@ const Projects = () => {
                     <div className='details'>
                       <span>{project.type}</span>
                       <p>{project.title}</p>
-                      <button>Ver Proyecto <span><HiArrowRight /></span></button>
+                      <button><FormattedMessage id='projects.view' /> <span><HiArrowRight /></span></button>
                     </div>
                 </div>
               </div>
@@ -71,9 +72,9 @@ const Projects = () => {
               <p>{modalContent.description}</p>
             </div>
             <div>
-              <p><span>Repositorio: </span><a href={modalContent.repository} target='_blank' rel="noreferrer">{modalContent.repository === "" ? "No disponible" : "Github"}</a></p>
-              <p><span>Fecha: </span>{modalContent.date}</p>
-              <p><span>Tecnologías: </span>{modalContent.techstack}</p>
+              <p><span><FormattedMessage id='projects.repository' />: </span><a href={modalContent.repository} target='_blank' rel="noreferrer">{modalContent.repository === "" ? "No disponible" : "Github"}</a></p>
+              <p><span><FormattedMessage id='projects.date' />: </span>{modalContent.date}</p>
+              <p><span><FormattedMessage id='projects.tech' />: </span>{modalContent.techstack}</p>
             </div>  
           </div>    
           <div>

@@ -1,64 +1,66 @@
+import { FormattedMessage } from 'react-intl';
+
 export const links = [
     {
-        name: "Inicio",
+        name: "home",
         path: "#header"
     },
     {
-        name: "Sobre mi",
+        name: "about",
         path: "#about"
     },
     {
-        name: "Habilidades",
+        name: "skills",
         path: "#skills"
     },
     {
-        name: "Projectos",
+        name: "projects",
         path: "#projects"
     },
     {
-        name: "Contacto",
+        name: "contact",
         path: "#contact"
     }
 ]
 
 export const projects = [
     {
-        type: "Sistema web",
-        title: "Sistema de Reclamos",
+        type: <FormattedMessage id='projects.psubtitle1' />,
+        title: <FormattedMessage id='projects.ptitle1' />,
         image: "complaints.jpg",
-        description: "Sistema web para registrar las reclamos y quejas de los usuarios, fue realizado para un curso de base de datos de la universidad. El sistema permite el inicio de sesión según el rol los usuarios, permite el registro de usuario y la creación de quejas. Permite a los administradores ver el seguimiento de todas las quejas registradas de los usuarios y actualizar el estado de estos. Los datos fueron almacenados en una base de datos de tipo relacional.",
+        description: <FormattedMessage id='projects.pdescription1' />,
         repository: "https://github.com/kattymmc/complaint-system",
-        date: "30 de Setiembre de 2020",
+        date: <FormattedMessage id='projects.pdate1' />,
         techstack: "NodeJS (handlebars, mongoose, express, bcrypts y passport), MongoDB",
         imagebody: ""
     },
     {
-        type: "Sistema web responsive",
-        title: "Sistema de gestión documentaria",
+        type: <FormattedMessage id='projects.psubtitle2' />,
+        title: <FormattedMessage id='projects.ptitle2' />,
         image: "documentary.jpg",
-        description: "Este proyecto fue realizado para almacenar los documentos del área de Trámite Documentario de la Facultad de Ingeniería de Sistemas. Fue realizado con el fin de mejorar el los tiempos de trámite. El sistema incluye registro, edición, clasificación, búsqueda y eliminación de los documentos. Los documentos pueden ser almacenados según el tipo solo se mostrará ciertos documentos a los usuarios permitidos.",
+        description:  <FormattedMessage id='projects.pdescription2' />,
         repository: "https://github.com/kattymmc/sistema-escaneo-backend",
-        date: "15 de Setiembre del 2020",
+        date: <FormattedMessage id='projects.pdate2' />,
         techstack: "Spring Boot, Spring Security, JPA, Angular, Typescript, MySQL",
         imagebody: ""
     },
     {
-        type: "Sistema web",
-        title: "Sistema de Búsqueda Docente",
+        type: <FormattedMessage id='projects.psubtitle3' />,
+        title: <FormattedMessage id='projects.ptitle3' />,
         image: "sysbusqdoc.png",
-        description: "Sistema web que permite la búsqueda del horario de clases de los docentes. Está conectado con una base de datos MySQL y se puede filtrar según el código del profesor,  el curso o el día en el que se realizará la clase. Este sistema ayudó a optimizar el proceso de asistencia.",
+        description:  <FormattedMessage id='projects.pdescription3' />,
         repository: "https://github.com/kattymmc/sistema-busqueda-docente",
-        date:"15 de Setiembre 2020",
+        date: <FormattedMessage id='projects.pdate3' />,
         techstack: "Spring Boot, Spring Security, JPA, ThymeLeaf, MySQL",
         imagebody: ""
     },
     {
-        type: "Sistema web",
-        title: "Smartready",
+        type: <FormattedMessage id='projects.psubtitle4' />,
+        title: <FormattedMessage id='projects.ptitle4' />,
         image: "smartready.jpg",
-        description: "Aplicación de seguimiento de tareas hecha con React. El sistema permite obtener los datos extraídos de la Base de datos de Netsuite y mostrar todas las tareas asignadas a los usuarios de la Empresa. Incluye funcionalidades de selección de prioridades, muestra de líneas de tiempo, asignación y actualización de tareas.",
+        description:  <FormattedMessage id='projects.pdescription4' />,
         repository: "",
-        date:"11 de Noviembre 2022",
+        date: <FormattedMessage id='projects.pdate4' />,
         techstack: "React, Javascript, MaterialUI, Netsuite",
         imagebody: ""
     }

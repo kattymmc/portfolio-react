@@ -167,5 +167,18 @@ img {
 
   section {
     padding: 4rem 1rem;
-  };
+  }
+
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+  }
+
+  h3 {
+    line-height: 2rem;
+  }
 }

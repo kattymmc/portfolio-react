@@ -1,0 +1,70 @@
+{
+    "menu.home" : "Home",
+    "menu.about": "About",
+    "menu.skills": "Skills",
+    "menu.projects": "Projects",
+    "menu.contact": "Contact",
+
+    "header.subtitle": "Hello! I am",
+    "header.description": "Graduated in Systems Engineering and focused on Full-stack development. My professional goal is to create innovative and efficient solutions to contribute to business success. I am willing to collaborate in complex and challenging projects that allow me to grow professionally and create a positive impact on society.",
+    "header.button1": "About me",
+    "header.button2": "Contact me",
+
+    "about.subtitle": "About me",
+    "about.description": "I studied Systems Engineering at the National University of San Marcos. I have 2 years of experience in the web systems development focused on ERP and Electronic Invoicing using technologies such as React and Javascript. I also spent 1 year working in the development area of my university developing web systems for administrative areas using Spring Boot and Angular. I am an empathetic and enthusiastic person, with skills focused on teamwork, assertive communication, problem solving, responsible and proactive, I like to learn from others and continuously improve myself.",
+    "about.button": "Download CV",
+
+    "skills.subtitle": "Skills",
+
+    "softskills.title": "Soft Skills",
+    "softskills.skill1": "Teamwork",
+    "softskills.description1": "Collaboration is essential to foster an environment of constant learning and growth to create quality software solutions. It also allows leveraging the strengths and skills of each team member to develop innovative solutions.",
+    "softskills.skill2": "Fast-learning",
+    "softskills.description2": "I am able to understand and assimilate new concepts and technologies with ease, allowing me to adapt quickly to project requirements and challenges. I am passionate about keeping myself updated on the latest technologies of the market in a highly changing environment.",
+    "softskills.skill3": "Analytical thinking",
+    "softskills.description3": "My ability to analyze and break down complex problems into more manageable tasks allows me to develop effective and efficient solutions for clients.",
+    
+    "techskills.title": "Technical skills",
+    "techskills.others": "Others",
+    "techskills.advanced": "Advanced",
+    "techskills.intermediate": "Intermediate",
+    "techskills.basic": "Basic",
+
+    "projects.subtitle": "Projects",
+    "projects.title": "My amazing works",
+    "projects.repository": "Repository",
+    "projects.date": "Date",
+    "projects.tech": "Technologies",
+    "projects.view": "View Project",
+
+    "projects.psubtitle1": "Web System",
+    "projects.ptitle1": "Complaint System",
+    "projects.pdescription1": "Web system to register the complaints of users, was made for a database course of the university. The system allows the login according to the users role, allows user registration and creation of complaints. It allows administrators to view the tracking of all registered user complaints and update the status of these. The data was stored in a relational database.",
+    "projects.pdate1": "September 30, 2020",
+
+    "projects.psubtitle2": "Web system",
+    "projects.ptitle2": "Documentary Management System",
+    "projects.pdescription2": "This project was carried out to store the documents of the Documentary Processing area of the School of Systems Engineering. It was developed in order to improve the processing time. The system includes registration, edition, classification, search and elimination of documents. The documents can be stored according to the type, only certain documents will be shown to the allowed users.",
+    "projects.pdate2": "September 15, 2020",
+
+    "projects.psubtitle3": "Responsive Web System",
+    "projects.ptitle3": "Teacher Search System",
+    "projects.pdescription3": "Web system that allows the search of teachers' class schedules. It is connected to a MySQL database and can be filtered according to the teacher's code, the course or the day on which the class will be held. This system helped to optimize the attendance process.",
+    "projects.pdate3": "September 15, 2020",
+
+    "projects.psubtitle4": "Web system",
+    "projects.ptitle4": "Smartready",
+    "projects.pdescription4": "Task tracking application made with React. The system allows to obtain data extracted from the Netsuite database and display all the tasks assigned to the Company users. It includes functionalities of priority selection, timeline display, task assignment and task update.",
+    "projects.pdate4": "November 11, 2022",
+
+    "contact.subtitle": "Contact me",
+    "contact.title": "Drop Me a Line",
+    "contact.writeme": "Write me",
+    "contact.email": "Email",
+    "contact.emailinput": "Enter your email",
+    "contact.message": "Message",
+    "contact.messageinput": "Enter your message",
+    "contact.submit": "Submit Message",
+
+    "footer.description": "Copyright © | Made by Katherine Miraval using React"
+}
