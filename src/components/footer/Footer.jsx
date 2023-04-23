@@ -12,7 +12,7 @@ function Footer() {
         <a href="https://www.instagram.com/kattymmc/" target='_blank' rel="noreferrer"><FaInstagram /></a>
       </div>
       <div className='footer-text'>
-        <FormattedMessage id='footer.descriptions' />
+        <FormattedMessage id='footer.description' />
       </div>
     </div>
   )

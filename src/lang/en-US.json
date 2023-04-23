@@ -36,6 +36,7 @@
     "projects.date": "Date",
     "projects.tech": "Technologies",
     "projects.view": "View Project",
+    "projects.nocontent": "Not available",
 
     "projects.psubtitle1": "Web System",
     "projects.ptitle1": "Complaint System",

@@ -72,7 +72,7 @@ const Projects = () => {
               <p>{modalContent.description}</p>
             </div>
             <div>
-              <p><span><FormattedMessage id='projects.repository' />: </span><a href={modalContent.repository} target='_blank' rel="noreferrer">{modalContent.repository === "" ? "No disponible" : "Github"}</a></p>
+              <p><span><FormattedMessage id='projects.repository' />: </span><a href={modalContent.repository} target='_blank' rel="noreferrer">{modalContent.repository === "" ? <FormattedMessage id="projects.nocontent" /> : "Github"}</a></p>
               <p><span><FormattedMessage id='projects.date' />: </span>{modalContent.date}</p>
               <p><span><FormattedMessage id='projects.tech' />: </span>{modalContent.techstack}</p>
             </div>  
